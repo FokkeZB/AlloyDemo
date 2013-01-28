@@ -3,10 +3,10 @@
     <id>test.alloy</id>
     <name>Alloy demo</name>
     <version>1.0</version>
-    <publisher>zandbergen</publisher>
-    <url>http://</url>
-    <description>not specified</description>
-    <copyright>2013 by zandbergen</copyright>
+    <publisher>Fokke Zandbergen</publisher>
+    <url>http://fokkezb.nl/alloy</url>
+    <description>Demo code accompanying a presentation on Appcelerator Titanium Alloy's features.</description>
+    <copyright>2013 by Fokke Zandbergen</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>

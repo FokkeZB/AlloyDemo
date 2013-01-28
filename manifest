@@ -1,9 +1,9 @@
-#appname: Alloy demo
-#appid: test.alloy
-#type: mobile
-#guid: 211e19b3-14cb-4644-9d83-c8cf4eeca159
-#version: 1.0
-#publisher: not specified
-#url: not specified
-#image: appicon.png
-#desc: not specified
+#appname:Alloy demo
+#appid:test.alloy
+#type:mobile
+#guid:211e19b3-14cb-4644-9d83-c8cf4eeca159
+#version:1.0
+#publisher:Fokke Zandbergen
+#url:http://fokkezb.nl/alloy
+#image:appicon.png
+#desc:Demo code accompanying a presentation on Appcelerator Titanium Alloy's features.
