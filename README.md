@@ -4,14 +4,14 @@ This is ugly non-functional app that serves just one purpose: explaining
 Alloy's core features. It's probably of not much use to you without the
 accompanying blog post and slides found at:
 
-	http://fokkezb.nl/alloy
+http://fokkezb.nl/alloy
 
 The presentation and demo was originally done for the Appcelerator Titanium
 Amsterdam meetup group on January 28th 2013. Join the group at:
 
-	http://www.meetup.com/Appcelerator-Titanium-Amsterdam/events/95577902/
+http://www.meetup.com/Appcelerator-Titanium-Amsterdam/events/95577902/
 
-----------------------------------
+***
 
 Appcelerator, Appcelerator Titanium and associated marks and logos are 
 trademarks of Appcelerator, Inc. 
