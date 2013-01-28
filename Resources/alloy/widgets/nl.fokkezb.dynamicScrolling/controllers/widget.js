@@ -1,6 +1,6 @@
 function WPATH(s) {
     var index = s.lastIndexOf("/"), path = index === -1 ? "nl.fokkezb.dynamicScrolling/" + s : s.substring(0, index) + "/nl.fokkezb.dynamicScrolling/" + s.substring(index + 1);
-    return path.indexOf("/") !== 0 ? "/" + path : path;
+    return path;
 }
 
 function Controller() {
@@ -48,8 +48,8 @@ function Controller() {
     }
     function doScroll(e) {
         var triggerLoad;
-        triggerLoad = item && e.firstVisibleItem > item && e.totalItemCount < e.firstVisibleItem + e.visibleItemCount;
-        item = e.firstVisibleItem;
+        triggerLoad = offset && e.contentOffset.y > offset && e.contentOffset.y + e.size.height > e.contentSize.height;
+        offset = e.contentOffset.y;
         triggerLoad && doTrigger();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));

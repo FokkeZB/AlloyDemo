@@ -1,7 +1,7 @@
 function Controller() {
     function setLocation(e) {
         $.myLocation.text = location;
-        Alloy.Globals.format = "Bye %s";
+        Alloy.Globals.format = "Hello %s";
         require("alerter").sayHello(location);
     }
     function addExclamation(model) {
@@ -22,7 +22,7 @@ function Controller() {
         barColor: "red",
         backgroundColor: "white",
         layout: "vertical",
-        title: L("Bye"),
+        title: L("Hello"),
         ns: Ti.UI,
         id: "myWindow"
     }), "Window", null);
@@ -44,7 +44,7 @@ function Controller() {
         id: "myLocation"
     }), "Label", $.__views.myWindow);
     $.__views.myWindow.add($.__views.myLocation);
-    $.__views.__alloyId5 = A$(Ti.UI.createLabel(function() {
+    $.__views.__alloyId4 = A$(Ti.UI.createLabel(function() {
         var o = {};
         _.extend(o, {
             top: 20,
@@ -57,13 +57,35 @@ function Controller() {
             color: "white"
         });
         _.extend(o, {
-            backgroundColor: "green",
-            text: "Android",
-            id: "__alloyId5"
+            backgroundColor: "blue",
+            text: "iOS",
+            id: "__alloyId4"
         });
         return o;
     }()), "Label", $.__views.myWindow);
-    $.__views.myWindow.add($.__views.__alloyId5);
+    $.__views.myWindow.add($.__views.__alloyId4);
+    if (Alloy.isTablet) {
+        $.__views.__alloyId6 = A$(Ti.UI.createLabel(function() {
+            var o = {};
+            _.extend(o, {
+                top: 20,
+                height: 20,
+                left: 0,
+                right: 0,
+                textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+            });
+            Alloy.isHandheld && _.extend(o, {
+                color: "white"
+            });
+            _.extend(o, {
+                backgroundColor: "blue",
+                text: "iPad",
+                id: "__alloyId6"
+            });
+            return o;
+        }()), "Label", $.__views.myWindow);
+        $.__views.myWindow.add($.__views.__alloyId6);
+    }
     $.__views.__alloyId7 = A$(Ti.UI.createTableView({
         top: 20,
         id: "__alloyId7"

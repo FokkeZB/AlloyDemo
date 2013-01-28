@@ -1,11 +1,16 @@
 function WPATH(s) {
     var index = s.lastIndexOf("/"), path = index === -1 ? "nl.fokkezb.tweetsView/" + s : s.substring(0, index) + "/nl.fokkezb.tweetsView/" + s.substring(index + 1);
-    return path.indexOf("/") !== 0 ? "/" + path : path;
+    return path;
 }
 
 function Controller() {
     function doInit(opts) {
         _.extend(options, opts);
+        pullController = Alloy.createWidget("nl.fokkezb.pullToRefresh");
+        pullController.init({
+            table: $.tableView,
+            loader: doRefresh
+        });
         options.opener !== !1 ? $.tableView.on("click", onTableViewClick) : $.tableView.allowsSelection = !1;
     }
     function openWindow(win) {
@@ -38,7 +43,7 @@ function Controller() {
     }
     function doManualRefresh() {
         if (loading) return !1;
-        doRefresh();
+        pullController.trigger();
         return !0;
     }
     function doRefresh(callback) {

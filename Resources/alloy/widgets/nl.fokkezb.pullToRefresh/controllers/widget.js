@@ -1,6 +1,6 @@
 function WPATH(s) {
     var index = s.lastIndexOf("/"), path = index === -1 ? "nl.fokkezb.pullToRefresh/" + s : s.substring(0, index) + "/nl.fokkezb.pullToRefresh/" + s.substring(index + 1);
-    return path.indexOf("/") !== 0 ? "/" + path : path;
+    return path;
 }
 
 function Controller() {
