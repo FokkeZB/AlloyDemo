@@ -1,0 +1,6 @@
+// This file is de-activated because of a bug in 0.3.6
+// causing some styles to be lost in merge 
+
+"Window": {
+	barColor: "green"
+}

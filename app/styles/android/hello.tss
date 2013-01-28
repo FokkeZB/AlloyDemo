@@ -1,0 +1,61 @@
+/************ SAME AS IOS, EXCEPT #myWindow title ************/
+
+// Style by element
+"Window": {
+	layout: "vertical",
+}
+
+// Need for , will be removed in next version
+,
+
+// Style by ID
+"#myWindow": {
+	
+	// Use internationalization shorthand
+	title: L('Bye')
+},
+
+"Label": {
+	top: 20,
+	height: 20
+},
+
+"#myLocation": {
+	
+	// Expressions will be deprecated
+	// Call global methods instead
+	// For now only variables though
+	color: Alloy.Globals.randomColor,
+	
+	font: {
+		
+		// Use global config
+		fontWeight: Alloy.CFG.fontWeight
+	}
+},
+
+// Style by class
+".condLabel": {
+	left: 0, right: 0,
+	
+	// Use Titanium constants
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+// Style by platform
+".condLabel[platform=ios]": {
+	backgroundColor: "blue"
+},
+
+".condLabel[platform=android]": {
+	backgroundColor: "green"
+},
+
+// Style by formFactor
+".condLabel[formFactor=handheld]": {
+	color: "white"
+},
+
+"TableView": {
+	top: 20
+}

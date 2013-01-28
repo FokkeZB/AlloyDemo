@@ -1,0 +1,22 @@
+{
+	"global": {
+	
+		"theme": "red",
+		
+		"fontWeight": "bold"
+	}, 
+	
+	"env:development": {}, 
+	"env:test": {}, 
+	"env:production": {}, 
+	
+	"os:ios": {}, 
+	"os:android": {}, 
+	
+	"dependencies": {
+        "nl.fokkezb.tweetsView": "1.0",
+        "nl.fokkezb.pullToRefresh": "1.1",
+        "nl.fokkezb.dynamicScrolling": "1.0",
+        "nl.fokkezb.browserView": "1.0"
+	}
+}

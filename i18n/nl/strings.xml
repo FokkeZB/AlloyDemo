@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://docs.appcelerator.com/titanium/latest/#!/guide/Internationalization -->
+<resources>
+
+	<!-- Used in hello.tss -->	
+    <string name="Hello">Hallo</string>
+    <string name="Bye">Doei</string>
+    
+</resources>

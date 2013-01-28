@@ -1,0 +1,5 @@
+// These styles will overrule only the specified properties for all Windows
+"Window": {
+	barColor: "red",
+	backgroundColor: "white"
+}

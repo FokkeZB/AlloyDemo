@@ -1,0 +1,34 @@
+<!-- Root element always 'Alloy' -->
+<Alloy>
+	
+	<!-- Create instance of a collection -->
+	<Collection src="hello" />
+	
+	<!-- Set namespace (Ti.UI is default, for maps: Ti.Maps) -->
+	<Window ns="Ti.UI" id="myWindow">
+		
+		<!-- Special elements for non-hierarchal features -->
+		<RightNavButton>
+			
+			<!-- Set event callbacks defined in controller -->
+			<Button onClick="setLocation">Right!</Button>
+		</RightNavButton>
+		
+		<!-- Elements with an 'id' accessable from controller -->
+		<Label id="myLocation">World</Label>
+		
+		<!-- Platform and formFactor conditions -->
+		<Label class="condLabel" platform="ios">iOS</Label>
+		<Label class="condLabel" platform="android">Android</Label>
+		<Label class="condLabel" platform="ios" formFactor="tablet">iPad</Label>
+		
+		<!-- Data-View binding for a collection or model -->
+		<!-- Set transform and filter functions defined in controller -->
+        <TableView dataCollection="hello" dataTransform="addExclamation" dataFilter="skipDutch">
+            
+            <!-- Use model values via {} -->
+            <TableViewRow title="{translation}" />
+        </TableView>
+		
+	</Window>
+</Alloy>

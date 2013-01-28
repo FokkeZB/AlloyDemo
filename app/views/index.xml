@@ -1,0 +1,24 @@
+<!-- Root element always 'Alloy' -->
+<Alloy>
+	
+	<!-- Elements correspondent to TI.UI objects -->
+	<TabGroup>
+		
+		<!-- Set any property using attributes but keep most in TSS -->
+		<Tab title="Hello" icon="hello.png">
+			<!-- Require another controller-view and pass an argument -->
+			<Require src="hello" location="Amsterdam" />
+		</Tab>
+		
+		<!--########## WIDGETS ########## -->
+		
+		<Tab id="tweetsTab" title="Tweets" icon="/images/nl.fokkezb.tweetsView/light_bird.png">
+			<Window id="tweetsWindow" title="Tweets">
+				<!-- Require a widget -->
+				<Widget src="nl.fokkezb.tweetsView" id="tweetsWidget" />				
+			</Window>
+		</Tab>
+		
+	</TabGroup>
+	
+</Alloy>
